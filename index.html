@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Basic Operations</title>
+</head>
+<body>
+    <h1>Basic Operations</h1>
+
+    <!-- POST form -->
+    <form id="create-user-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" required><br>
+        
+        <label for="status">Status:</label>
+        <input type="text" id="status" required><br>
+        
+        <button type="submit">Create User</button>
+    </form>
+    
+
+    <!-- DELETE form -->
+    <form id="delete-user-form">
+        <label for="delete-id">ID to Delete:</label>
+        <input type="text" id="delete-id" name="delete-id" required>
+        <button type="submit">DELETE</button>
+    </form>
+
+    <!-- GET form -->
+    <form id="get-user-form">
+        <label for="get-id">ID to Fetch:</label>
+        <input type="text" id="get-id" name="get-id">
+        <button type="submit" id="fetch">GET Data</button>
+    </form>
+
+    <!-- PUT form -->
+    <form id="put-user-form">
+        <label for="put-id">ID to Update:</label>
+        <input type="text" id="put-id" name="put-id" required>
+        <label for="put-status">New Status:</label>
+        <input type="text" id="put-status" name="put-status" required>
+        <button type="submit">PUT</button>
+    </form>
+
+    <ul id="user-list"></ul>
+
+    <script src="./script.js"></script>
+</body>
+</html>
